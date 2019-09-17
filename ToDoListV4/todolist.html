@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>ToDoList</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    A faire: <input type="checkbox" value="1" data-bind="checked: filters" /><br/>
+    Accompli: <input type="checkbox" value="2" data-bind="checked: filters" /><br/>
+    Voir tout: <input type="checkbox" value="3" data-bind="checked: filters" /><br/>
+<hr/>
+<ul data-bind="foreach: filteredPeople">
+    <li data-bind="text: name"></li>
+</ul>
+
+    <script src="script.js"></script>
+    <script>
+{
+  alert("Bienvenue!");
+}
+</script>
+  </body>
+</html>
